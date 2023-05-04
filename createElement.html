@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - DOM part 2</title>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+
+        // append child
+       let ele =  document.createElement("h1");
+       ele.className = "pwskills";
+       ele.style.fontSize = "25px";
+       ele.textContent = "Hello Dear"
+       console.log(ele);
+       document.body.appendChild(ele);
+
+       // remaove child
+
+       let ul = document.querySelector("ul");
+        console.log(ul);
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists) {
+            ul.removeChild(list);
+        }
+
+    </script>
+    
+</body>
+</html>
